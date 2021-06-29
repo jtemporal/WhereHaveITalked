@@ -1,4 +1,3 @@
-import re
 import pandas as pd
 from ipyleaflet import Map, Marker, basemaps
 
