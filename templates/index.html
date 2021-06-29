@@ -1,0 +1,1805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IPyWidget export</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "c1425ad2d4c644b782570e39aa753542": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "2fbb08af089c4b6380a715e38f68e506": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "9af834f4eff24bfeb3e5acd44e7330f1": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "name": "OpenStreetMap.Mapnik",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "09ac5729763e4dc38eebfbeb34be47f9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "535d9b59c0e144b58fd62210ab0d91ef": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "9790e0c58ef8449cbc0160a1c8f52888": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          13.133932434766733,
+          16.103938729508073
+        ],
+        "controls": [
+          "IPY_MODEL_ade97602b0134fde86a56f52a65c88eb",
+          "IPY_MODEL_2a7f40cb4b2743ba976d5ad82722d259"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_c1425ad2d4c644b782570e39aa753542",
+        "dragging_style": "IPY_MODEL_2fbb08af089c4b6380a715e38f68e506",
+        "layers": [
+          "IPY_MODEL_9af834f4eff24bfeb3e5acd44e7330f1",
+          "IPY_MODEL_b8890b6555f64351865720257c3e8bfc",
+          "IPY_MODEL_dfd0e1f0d70d474783380a7e1a5d5819",
+          "IPY_MODEL_3af43349f01e4b24a8c36831aac67134",
+          "IPY_MODEL_1c928848cf74432fbd1d34f5214c7dbb",
+          "IPY_MODEL_24a3f3a420ff47b6bfbbf96b5260117f",
+          "IPY_MODEL_d4d948c982e04c67bc4417c828fa674b",
+          "IPY_MODEL_b4861e6d1fb945e0a45c5edb20a332fd",
+          "IPY_MODEL_549c40f1becd4a6f86c775e55f98a3cc",
+          "IPY_MODEL_4b440dcfafbe44d4aa4ec12f0f9be697",
+          "IPY_MODEL_2766d62c78ca47a898d1e7c0b92d5ba1"
+        ],
+        "layout": "IPY_MODEL_09ac5729763e4dc38eebfbeb34be47f9",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "style": "IPY_MODEL_535d9b59c0e144b58fd62210ab0d91ef",
+        "zoom": 2.0
+      }
+    },
+    "ade97602b0134fde86a56f52a65c88eb": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "2a7f40cb4b2743ba976d5ad82722d259": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "b8890b6555f64351865720257c3e8bfc": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          47.0707,
+          15.4395
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Graz"
+      }
+    },
+    "dfd0e1f0d70d474783380a7e1a5d5819": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          25.033,
+          121.5654
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Taipei"
+      }
+    },
+    "3af43349f01e4b24a8c36831aac67134": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -23.5505,
+          -46.6333
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "S\u00e3o Paulo"
+      }
+    },
+    "1c928848cf74432fbd1d34f5214c7dbb": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -21.1704,
+          -47.8103
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Ribeir\u00e3o Preto"
+      }
+    },
+    "24a3f3a420ff47b6bfbbf96b5260117f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -27.5986,
+          -48.5187
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Florian\u00f3polis"
+      }
+    },
+    "d4d948c982e04c67bc4417c828fa674b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -12.9777,
+          -38.5016
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Salvador"
+      }
+    },
+    "b4861e6d1fb945e0a45c5edb20a332fd": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -9.6498,
+          -35.7089
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Macei\u00f3"
+      }
+    },
+    "549c40f1becd4a6f86c775e55f98a3cc": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -19.9167,
+          -43.9345
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Belo Horizonte"
+      }
+    },
+    "4b440dcfafbe44d4aa4ec12f0f9be697": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -15.8267,
+          -47.9218
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Bras\u00edlia"
+      }
+    },
+    "2766d62c78ca47a898d1e7c0b92d5ba1": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -15.8267,
+          -47.9218
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Bras\u00edlia"
+      }
+    },
+    "9f9e312ef55a409ca7c7e490cf9cacb7": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "59a262856c5d44dd80013084ff1f0274": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "0a3552966b9b44cfaffd18ad6ec899b8": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "name": "OpenStreetMap.Mapnik",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "d3e61fd1c2f644869dfdad3f6fc47ebc": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f1643eee6f1e48fc894bed24afff89aa": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "e81c66b18c314563be1520d4764a1628": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          13.133932434766733,
+          16.103938729508073
+        ],
+        "controls": [
+          "IPY_MODEL_068f6f5dd7a64708b6bc42f321be146d",
+          "IPY_MODEL_197481033cc04c268b30d43f5dd013ee"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_9f9e312ef55a409ca7c7e490cf9cacb7",
+        "dragging_style": "IPY_MODEL_59a262856c5d44dd80013084ff1f0274",
+        "layers": [
+          "IPY_MODEL_0a3552966b9b44cfaffd18ad6ec899b8",
+          "IPY_MODEL_ad03df7136b34670932e84f58fc2f65a",
+          "IPY_MODEL_16fbfd9c6044406fb32257742fbc4e30",
+          "IPY_MODEL_cdf3877df16b44f28a4cbc9947b0f6d5",
+          "IPY_MODEL_37e5178f66e54c4e9ef130fa4ad686c9",
+          "IPY_MODEL_d14156a408c846f5951336b007911455",
+          "IPY_MODEL_cd9ef69bf73f40a2a33cd9d3e0c6e4d8",
+          "IPY_MODEL_37e84ca3343b4b1d8f62d7c15f13fd9d",
+          "IPY_MODEL_482009a0da6343bb8b09d964f1a38bad",
+          "IPY_MODEL_155adbe5357647eda182734d5dc69294"
+        ],
+        "layout": "IPY_MODEL_d3e61fd1c2f644869dfdad3f6fc47ebc",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "style": "IPY_MODEL_f1643eee6f1e48fc894bed24afff89aa",
+        "zoom": 2.0
+      }
+    },
+    "068f6f5dd7a64708b6bc42f321be146d": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "197481033cc04c268b30d43f5dd013ee": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "ad03df7136b34670932e84f58fc2f65a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          47.0707,
+          15.4395
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Graz"
+      }
+    },
+    "16fbfd9c6044406fb32257742fbc4e30": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          25.033,
+          121.5654
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Taipei"
+      }
+    },
+    "cdf3877df16b44f28a4cbc9947b0f6d5": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -23.5505,
+          -46.6333
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "S\u00e3o Paulo"
+      }
+    },
+    "37e5178f66e54c4e9ef130fa4ad686c9": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -21.1704,
+          -47.8103
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Ribeir\u00e3o Preto"
+      }
+    },
+    "d14156a408c846f5951336b007911455": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -27.5986,
+          -48.5187
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Florian\u00f3polis"
+      }
+    },
+    "cd9ef69bf73f40a2a33cd9d3e0c6e4d8": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -12.9777,
+          -38.5016
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Salvador"
+      }
+    },
+    "37e84ca3343b4b1d8f62d7c15f13fd9d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -9.6498,
+          -35.7089
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Macei\u00f3"
+      }
+    },
+    "482009a0da6343bb8b09d964f1a38bad": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -19.9167,
+          -43.9345
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Belo Horizonte"
+      }
+    },
+    "155adbe5357647eda182734d5dc69294": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -15.8267,
+          -47.9218
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Bras\u00edlia"
+      }
+    },
+    "43585110cab246c18a37ee34e5dc1ac8": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "62386cfde31245b4b7747f660a1f2413": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "671540a0b77f44b2b83b7d55c89e40ed": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "name": "OpenStreetMap.Mapnik",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "3cfc731ac2e74c66b240fd9d32d58942": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ce5d68d966f846bea1df3551cde10452": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "55e9a299053f40088b1af1c26cf9d3e5": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          13.133932434766733,
+          16.103938729508073
+        ],
+        "controls": [
+          "IPY_MODEL_699f9db5d4eb4a13a470a1b4609d6fb5",
+          "IPY_MODEL_c048bfdc810e4974bd4efb706843dd30"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_43585110cab246c18a37ee34e5dc1ac8",
+        "dragging_style": "IPY_MODEL_62386cfde31245b4b7747f660a1f2413",
+        "layers": [
+          "IPY_MODEL_671540a0b77f44b2b83b7d55c89e40ed",
+          "IPY_MODEL_78240dc9b60e43689cd8fad0883eb9e4",
+          "IPY_MODEL_3226275d83a642cf97cdf3c7b03a243e",
+          "IPY_MODEL_0a82621f6ea34edb8cf1d42f892ad0d2",
+          "IPY_MODEL_6e220ff6677c42abbf46d2ab0cbdb2d4",
+          "IPY_MODEL_6c5739b14b9b41ef868de8d28b8749f3",
+          "IPY_MODEL_80689e27379e47879d32d5a54d8ed946",
+          "IPY_MODEL_eecdff8ac2c94365a5e86bdf3abc452e",
+          "IPY_MODEL_3180c18b02d4418796cc74c15ecabd9d",
+          "IPY_MODEL_2dc32f0235d24d1b9f27c39649e1375f",
+          "IPY_MODEL_c51c325cd3bb4038bdf23c9d6e536f74"
+        ],
+        "layout": "IPY_MODEL_3cfc731ac2e74c66b240fd9d32d58942",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "style": "IPY_MODEL_ce5d68d966f846bea1df3551cde10452",
+        "zoom": 2.0
+      }
+    },
+    "699f9db5d4eb4a13a470a1b4609d6fb5": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "c048bfdc810e4974bd4efb706843dd30": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "78240dc9b60e43689cd8fad0883eb9e4": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          47.0707,
+          15.4395
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Graz"
+      }
+    },
+    "3226275d83a642cf97cdf3c7b03a243e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          25.033,
+          121.5654
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Taipei"
+      }
+    },
+    "0a82621f6ea34edb8cf1d42f892ad0d2": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -23.5505,
+          -46.6333
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "S\u00e3o Paulo"
+      }
+    },
+    "6e220ff6677c42abbf46d2ab0cbdb2d4": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -21.1704,
+          -47.8103
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Ribeir\u00e3o Preto"
+      }
+    },
+    "6c5739b14b9b41ef868de8d28b8749f3": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -27.5986,
+          -48.5187
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Florian\u00f3polis"
+      }
+    },
+    "80689e27379e47879d32d5a54d8ed946": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -12.9777,
+          -38.5016
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Salvador"
+      }
+    },
+    "eecdff8ac2c94365a5e86bdf3abc452e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -9.6498,
+          -35.7089
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Macei\u00f3"
+      }
+    },
+    "3180c18b02d4418796cc74c15ecabd9d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -19.9167,
+          -43.9345
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Belo Horizonte"
+      }
+    },
+    "2dc32f0235d24d1b9f27c39649e1375f": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -15.8267,
+          -47.9218
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Bras\u00edlia"
+      }
+    },
+    "c51c325cd3bb4038bdf23c9d6e536f74": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -15.8267,
+          -47.9218
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Bras\u00edlia"
+      }
+    },
+    "ddd282b38b2341e1b8b9a090b71cdd38": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "ea9dbdb317dd4ddeba48ea2014560f99": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "da8b2003527d4bd282e61f86cc29ff26": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "name": "OpenStreetMap.Mapnik",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "c0c00fb36e39419c98d6d6829d97d5a5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "786b99bfc62c45a2b46e89f33f71bcfc": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "8a70f8a9169a458d8c9ed83691457e04": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          13.133932434766733,
+          16.103938729508073
+        ],
+        "controls": [
+          "IPY_MODEL_b1d040d69f8f4d44be02c6c2ba05282d",
+          "IPY_MODEL_e81e0a048c5e4ba898cc1ff8bdb9df23"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_ddd282b38b2341e1b8b9a090b71cdd38",
+        "dragging_style": "IPY_MODEL_ea9dbdb317dd4ddeba48ea2014560f99",
+        "layers": [
+          "IPY_MODEL_da8b2003527d4bd282e61f86cc29ff26",
+          "IPY_MODEL_1858ce104a184007a4bb2b336d2d82ff",
+          "IPY_MODEL_65a73ed1231c423cb31a8f9858717d50",
+          "IPY_MODEL_40129baf15f14719a0d00bf43b45d340",
+          "IPY_MODEL_12c6d9afcc5c4dc2bdf2792509bb4985",
+          "IPY_MODEL_6f0c00a34e8b462e92059a8f03f00dae",
+          "IPY_MODEL_0e540e490c7a43b897dbd37c7737554b",
+          "IPY_MODEL_1c9b7e40c368486e80e9b78b16a8c0ff",
+          "IPY_MODEL_075bc4fd1dfd4093991c993b9b9f1545",
+          "IPY_MODEL_29f4df660a374a4c8b1556e088de0daf"
+        ],
+        "layout": "IPY_MODEL_c0c00fb36e39419c98d6d6829d97d5a5",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "style": "IPY_MODEL_786b99bfc62c45a2b46e89f33f71bcfc",
+        "zoom": 2.0
+      }
+    },
+    "b1d040d69f8f4d44be02c6c2ba05282d": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "e81e0a048c5e4ba898cc1ff8bdb9df23": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "1858ce104a184007a4bb2b336d2d82ff": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          47.0707,
+          15.4395
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Graz"
+      }
+    },
+    "65a73ed1231c423cb31a8f9858717d50": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          25.033,
+          121.5654
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Taipei"
+      }
+    },
+    "40129baf15f14719a0d00bf43b45d340": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -23.5505,
+          -46.6333
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "S\u00e3o Paulo"
+      }
+    },
+    "12c6d9afcc5c4dc2bdf2792509bb4985": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -21.1704,
+          -47.8103
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Ribeir\u00e3o Preto"
+      }
+    },
+    "6f0c00a34e8b462e92059a8f03f00dae": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -27.5986,
+          -48.5187
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Florian\u00f3polis"
+      }
+    },
+    "0e540e490c7a43b897dbd37c7737554b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -12.9777,
+          -38.5016
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Salvador"
+      }
+    },
+    "1c9b7e40c368486e80e9b78b16a8c0ff": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -9.6498,
+          -35.7089
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Macei\u00f3"
+      }
+    },
+    "075bc4fd1dfd4093991c993b9b9f1545": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -19.9167,
+          -43.9345
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Belo Horizonte"
+      }
+    },
+    "29f4df660a374a4c8b1556e088de0daf": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -15.8267,
+          -47.9218
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Bras\u00edlia"
+      }
+    },
+    "2d8fbf1aa39543319b06d8876bc5f029": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "dd958905338f4790a6a385f465fe57d8": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "d466848cf5fa45e4add79e763bd6fc3c": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "name": "OpenStreetMap.Mapnik",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "321d575f16604a308c58e88ef45cc444": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "56f2143d17df4df6b34a352a0b1d3099": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "569f5cc789cd4e5b97a4d4753ba04929": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          13.133932434766733,
+          16.103938729508073
+        ],
+        "controls": [
+          "IPY_MODEL_4d8c9bed6f1e4e13bf537c54288f839f",
+          "IPY_MODEL_5bd70fdcac0942e9a107f495d3465391"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_2d8fbf1aa39543319b06d8876bc5f029",
+        "dragging_style": "IPY_MODEL_dd958905338f4790a6a385f465fe57d8",
+        "layers": [
+          "IPY_MODEL_d466848cf5fa45e4add79e763bd6fc3c",
+          "IPY_MODEL_cbf5a6c1a4a541e68ec8a00fa7c0256b",
+          "IPY_MODEL_70fbde1abdba4629ad0881776169a34d",
+          "IPY_MODEL_3221c405e29945818dbdce9cbd3190c7",
+          "IPY_MODEL_2176ff4add244217b2d9a29ffe09a4e6",
+          "IPY_MODEL_f7cb0690a49647178953193a4a353933",
+          "IPY_MODEL_cd1cc155e44944b8bf341bbd794e4ea2",
+          "IPY_MODEL_9275f133944d45308573cafb18fb234d",
+          "IPY_MODEL_303fc6f17be84cb4b0f2c062e95537e6",
+          "IPY_MODEL_f2155a540cd848469fddd945eeb84b21"
+        ],
+        "layout": "IPY_MODEL_321d575f16604a308c58e88ef45cc444",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "style": "IPY_MODEL_56f2143d17df4df6b34a352a0b1d3099",
+        "zoom": 2.0
+      }
+    },
+    "4d8c9bed6f1e4e13bf537c54288f839f": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "5bd70fdcac0942e9a107f495d3465391": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "cbf5a6c1a4a541e68ec8a00fa7c0256b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          47.0707,
+          15.4395
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Graz"
+      }
+    },
+    "70fbde1abdba4629ad0881776169a34d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          25.033,
+          121.5654
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Taipei"
+      }
+    },
+    "3221c405e29945818dbdce9cbd3190c7": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -23.5505,
+          -46.6333
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "S\u00e3o Paulo"
+      }
+    },
+    "2176ff4add244217b2d9a29ffe09a4e6": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -21.1704,
+          -47.8103
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Ribeir\u00e3o Preto"
+      }
+    },
+    "f7cb0690a49647178953193a4a353933": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -27.5986,
+          -48.5187
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Florian\u00f3polis"
+      }
+    },
+    "cd1cc155e44944b8bf341bbd794e4ea2": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -12.9777,
+          -38.5016
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Salvador"
+      }
+    },
+    "9275f133944d45308573cafb18fb234d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -9.6498,
+          -35.7089
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Macei\u00f3"
+      }
+    },
+    "303fc6f17be84cb4b0f2c062e95537e6": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -19.9167,
+          -43.9345
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Belo Horizonte"
+      }
+    },
+    "f2155a540cd848469fddd945eeb84b21": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "location": [
+          -15.8267,
+          -47.9218
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Bras\u00edlia"
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "569f5cc789cd4e5b97a4d4753ba04929"}
+</script>
+
+</body>
+</html>
