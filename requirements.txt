@@ -1,0 +1,6 @@
+Flask==2.0.0
+Flask-Cors==3.0.10
+httpx==0.18.2
+pycodestyle==2.7.0
+python-jose==3.3.0
+ipyleaflet==0.14.0
