@@ -1,4 +1,5 @@
 import configparser
+import os
 import json
 
 from functools import wraps
@@ -8,9 +9,17 @@ from flask import request, _request_ctx_stack
 from jose import jwt
 
 
-config = configparser.ConfigParser()
-config.read('.config')
-config = config['AUTH0']
+env = os.getenv('ENV', 'dev')
+if env == 'dev':
+    config = configparser.ConfigParser()
+    config.read('.config')
+    config = config['AUTH0']
+else:
+    config = {
+        'DOMAIN': os.getenv('DOMAIN', 'your.domain.com'),
+        'API_AUDIENCE': os.getenv('API_AUDIENCE', 'your.audience.com'),
+        'ALGORITHMS': os.getenv('ALGORITHMS', 'RS256')
+    }
 
 
 class AuthError(Exception):
