@@ -12,6 +12,7 @@ pycodestyle = "2.7.0"
 python-jose = "3.3.0"
 ipyleaflet = "0.14.0"
 gunicorn = "20.1.0"
+pandas = "1.2.5"
 
 [requires]
 
