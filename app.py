@@ -1,4 +1,3 @@
-import time
 from flask import Flask, render_template, request, redirect, url_for
 from flask_cors import cross_origin
 
@@ -39,7 +38,3 @@ def new_place():
     if created:
         return render_template('index.html')
     return redirect(url_for('oops'))
-
-
-if __name__ == '__main__':
-    app.run()
