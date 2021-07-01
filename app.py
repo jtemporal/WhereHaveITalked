@@ -28,7 +28,7 @@ def update_map():
     return redirect(url_for('oops'))
 
 
-@app.post('/newplace')
+@app.post('/places')
 @cross_origin(headers=["Content-Type", "Authorization"])
 @requires_auth
 def new_place():
