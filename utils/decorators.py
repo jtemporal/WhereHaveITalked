@@ -164,7 +164,7 @@ def validate_token(token):
 
 
 def requires_auth(f):
-    """Determines if there is a valid Access available"""
+    """Determines if there is a valid Access Token available"""
 
     @wraps(f)
     def decorated(*args, **kwargs):

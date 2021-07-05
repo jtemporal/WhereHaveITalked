@@ -19,7 +19,7 @@ def oops():
 
 
 @app.get('/ping')
-@cross_origin(headers=["Content-Type", "Authorization"])
+@cross_origin(allow_headers=["Content-Type", "Authorization"])
 @requires_auth
 def update_map():
     created = create_map()
@@ -29,7 +29,7 @@ def update_map():
 
 
 @app.post('/places')
-@cross_origin(headers=["Content-Type", "Authorization"])
+@cross_origin(allow_headers=["Content-Type", "Authorization"])
 @requires_auth
 def new_place():
     place_data = request.json
