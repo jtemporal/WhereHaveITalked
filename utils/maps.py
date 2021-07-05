@@ -1,4 +1,5 @@
 import pandas as pd
+from ipywidgets import HTML
 from ipyleaflet import Map, Marker, basemaps
 
 
@@ -42,10 +43,18 @@ def adds_markers(my_map, dataset):
     """
 
     for _, place in dataset.iterrows():
+
         marker = Marker(
             location=[place['latitude'], place['longitude']],
-            title=place['name']
+            title=place['name'],
+            draggable=False
         )
+
+        name_popup = HTML()
+        name_popup.value = place['name']
+
+        marker.popup = name_popup
+
         my_map.add_layer(marker)
 
     return my_map
