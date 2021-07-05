@@ -61,7 +61,7 @@ def create_map():
         df = load_data()
         my_map = creates_standard_map()
         marked_map = adds_markers(my_map, df)
-        marked_map.save('templates/index.html')
+        marked_map.save('templates/index.html', title='Where Have I Been')
     except:
         return False
     return True
