@@ -3,5 +3,5 @@ Flask-Cors==3.0.10
 pandas==1.2.5
 pycodestyle==2.7.0
 python-jose==3.3.0
-ipyleaflet==0.14.0
+folium==0.12.1
 gunicorn==20.1.0

@@ -1,6 +1,5 @@
 import pandas as pd
-from ipywidgets import HTML
-from ipyleaflet import Map, Marker, basemaps
+import folium
 
 
 def load_data():
@@ -22,40 +21,32 @@ def save_data(dataset):
 
 
 def creates_standard_map():
-    """Creates a standard map with OpenStreetMap
+    """Creates a standard map with folium
 
     Returns:
-        map: A ipyleaflet.Map
+        map: A folium.Map
     """
     center = (13.133932434766733, 16.103938729508073)
-    return Map(basemap=basemaps.OpenStreetMap.Mapnik, center=center, zoom=2)
+    return folium.Map(location=center, zoom_start=3)
 
 
 def adds_markers(my_map, dataset):
     """Adds Markers to map from each place in dataset
 
     Args:
-        my_map: required, ipyleaflet.Map standard map to add markers
+        my_map: required, folium.Map standard map to add markers
         dataset: required, Pandas.DataFrame with locations
 
     Return:
-        my_map: A ipyleaflet.Map with marker layers
+        my_map: A folium.Map with marker layers
     """
 
     for _, place in dataset.iterrows():
-
-        marker = Marker(
+        folium.Marker(
             location=[place['latitude'], place['longitude']],
-            title=place['name'],
-            draggable=False
-        )
-
-        name_popup = HTML()
-        name_popup.value = place['name']
-
-        marker.popup = name_popup
-
-        my_map.add_layer(marker)
+            popup=place['name'],
+            tooltip=place['name']
+        ).add_to(my_map)
 
     return my_map
 
@@ -70,7 +61,7 @@ def create_map():
         df = load_data()
         my_map = creates_standard_map()
         marked_map = adds_markers(my_map, df)
-        marked_map.save('templates/index.html', title='Where Have I Been')
+        marked_map.save('templates/index.html')
     except:
         return False
     return True
