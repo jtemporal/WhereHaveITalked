@@ -1,5 +1,20 @@
+import os
+
 import pandas as pd
 import folium
+
+from github import Github
+from io import StringIO
+
+
+env = os.getenv("ENV", "dev")
+
+if env == "prod":
+    config = {
+        "github": os.getenv("GITHUB_TOKEN", "yourTokenFromGitHub"),
+        "repo": os.getenv("GITHUB_REPO", "yourGitHubRepo"),
+    }
+
 
 
 def load_data():
@@ -8,7 +23,10 @@ def load_data():
     Returns:
         df: A Pandas.DataFrame containing all stored data
     """
-    return pd.read_csv('places.csv')
+    github = Github(config["github"])
+    repository = github.get_user().get_repo(config["repo"])
+    file = repository.get_contents('places.csv')
+    return pd.read_csv(StringIO(file.decoded_content.decode()))
 
 
 def save_data(dataset):
@@ -17,7 +35,20 @@ def save_data(dataset):
     Args:
         dataset: required, Pandas.DataFrame with locations
     """
-    dataset.to_csv('places.csv', index=False)
+    github = Github(config["github"])
+    repository = github.get_user().get_repo(config["repo"])
+
+    # file info
+    filename = 'places.csv'
+    sha = repository.get_contents(filename).sha
+
+    s = StringIO()
+    dataset.to_csv(s, index=False)
+    content = s.getvalue()
+
+    # create with commit message
+    commit_message = "Update data via PyGithub"
+    repository.update_file(filename, commit_message, content, sha)
 
 
 def creates_standard_map():
