@@ -1,3 +1,4 @@
+import configparser
 import os
 
 import pandas as pd
@@ -9,12 +10,15 @@ from io import StringIO
 
 env = os.getenv("ENV", "dev")
 
-if env == "prod":
+if env == "dev":
+    config = configparser.ConfigParser()
+    config.read(".config")
+    config = config["AUTH0"]
+else:
     config = {
         "github": os.getenv("GITHUB_TOKEN", "yourTokenFromGitHub"),
         "repo": os.getenv("GITHUB_REPO", "yourGitHubRepo"),
     }
-
 
 
 def load_data():

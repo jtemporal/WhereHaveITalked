@@ -33,7 +33,7 @@ def update_map():
 @requires_auth
 def new_place():
     place_data = request.json
-    _ = create_new_place(place_data)
+    create_new_place(place_data)
     created = create_map()
     if created:
         return render_template('index.html')
